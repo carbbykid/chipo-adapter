@@ -1,0 +1,32 @@
+{
+  "name": "coin98-connector-chipo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbbykid/coin98-connector-chipo.git"
+  },
+  "author": "ChiPoPo",
+  "license": "MIT",
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
+    "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.5.0"
+}
